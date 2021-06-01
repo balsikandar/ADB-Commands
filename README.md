@@ -65,6 +65,30 @@ adb shell screenrecord /sdcard/recording.mp4 --time-limit 20
 adb shell screenrecord --help
 ```
 
+### ADB pm (Package Manager)
+Package Manager can be used to do things like clear app data, uninstall an app, restart an app all these things at package level
+
+#### ADB command to clear app data
+```
+adb shell pm clear packageName
+```
+
+#### ADB command to install an apk
+```
+adb install path/your_app.apk
+```
+
+#### ADB command to update a release apk
+```
+adb install -r path/release.apk
+```
+
+#### ADB command to uninstall an apk
+```
+adb uninstall packageName
+```
+
+
 ### License
 
    ```
